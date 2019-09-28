@@ -32,7 +32,7 @@ def bin_search(target, low, high, int_list):  # must use recursion
         raise ValueError
     if not int_list:
         return None
-    assert(low < high), 'Low is not greater than high'
+    assert(low <= high), 'Low is not greater than high'
     assert(0 <= low), 'Low not in range'
     assert(high <= len(int_list)), 'high cannot be greater than length of list'
     if target > int_list[high] or target < int_list[low]:
